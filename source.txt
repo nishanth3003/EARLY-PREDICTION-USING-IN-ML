@@ -1,0 +1,81 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WebApplication2._Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+        <p style="margin-left: 80px">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            CHRONIC KIDNEY DISEASE<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        PREDICTION<br />
+            <br />
+    
+        <img alt="kidney" 
+            src="../../../../../../image/human-kidney-anatomy-isolated-on-white-vector.jpg" 
+            style="width: 378px; height: 194px" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    <p>
+        Chronic Kidney Prediction</p>
+    </div>
+    <p>
+        A Machine Learning Web App, Built with Flask</p>
+    <asp:Label ID="Label1" runat="server" Text=" Enter your blood_urea"></asp:Label>
+    <asp:TextBox ID="TextBox1" runat="server" Width="259px" EnableViewState="False"></asp:TextBox>
+    <p>
+        <asp:Label ID="Label2" runat="server" Text="Enter your blood glucose "></asp:Label>
+        <asp:TextBox ID="TextBox2" runat="server" Width="260px" EnableViewState="False"></asp:TextBox>
+    </p>
+    <asp:DropDownList ID="DropDownList1" runat="server">
+        <asp:ListItem>select anemia or not</asp:ListItem>
+        <asp:ListItem Value="Anemia"></asp:ListItem>
+        <asp:ListItem Value="Not Anemia"></asp:ListItem>
+    </asp:DropDownList>
+    <p>
+        <asp:DropDownList ID="DropDownList2" runat="server">
+            <asp:ListItem>select coronary artery disease or not</asp:ListItem>
+            <asp:ListItem> coronary artery disease not</asp:ListItem>
+            <asp:ListItem> coronary artery disease
+            </asp:ListItem>
+        </asp:DropDownList>
+    </p>
+    <asp:DropDownList ID="DropDownList3" runat="server">
+        <asp:ListItem>select pus_cell or not</asp:ListItem>
+        <asp:ListItem>pus_cell not</asp:ListItem>
+        <asp:ListItem>pus_cell
+        </asp:ListItem>
+    </asp:DropDownList>
+    <p>
+        <asp:DropDownList ID="DropDownList4" runat="server">
+            <asp:ListItem>select red_blood_cell level</asp:ListItem>
+            <asp:ListItem>red_blood_cell level</asp:ListItem>
+            <asp:ListItem>red_blood_cell level</asp:ListItem>
+        </asp:DropDownList>
+    </p>
+    <asp:DropDownList ID="DropDownList5" runat="server">
+        <asp:ListItem>select diabetesmellitus or not</asp:ListItem>
+        <asp:ListItem>diabetesmellitus not</asp:ListItem>
+        <asp:ListItem>diabetesmellitus
+        </asp:ListItem>
+    </asp:DropDownList>
+    <p>
+        <asp:DropDownList ID="DropDownList6" runat="server">
+            <asp:ListItem>select pedal_edema or not</asp:ListItem>
+            <asp:ListItem>pedal_edema not</asp:ListItem>
+            <asp:ListItem>pedal_edema
+            </asp:ListItem>
+        </asp:DropDownList>
+    </p>
+    <p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="Button1" runat="server" style="margin-left: 193px" 
+            Text="predict" Width="111px" />
+    </p>
+    </form>
+</body>
+</html>
